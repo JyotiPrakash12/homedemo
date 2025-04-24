@@ -1,0 +1,12 @@
+<h3>TODO LIST</h3>
+<form method="post" action="">
+    {% csrf_token %} <input type="text" name="text" id="todo-list" placeholder="enter your todo">
+    <input type="submit" value="ADD">
+</form>
+
+{% for task in tasks %}
+    <h5>{{ task }}</h5>
+{% endfor %}
+
+
+    
