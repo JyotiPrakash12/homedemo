@@ -4,6 +4,7 @@ def calculate_love_score(name1,name2):
     for char in combined_name:
         if char in letters_to_count:
             letters_to_count[char]+=1 
+            print(letters_to_count)
 
             
     true_count = letters_to_count['t'] + letters_to_count['r'] + letters_to_count['u'] + letters_to_count['e']
